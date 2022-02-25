@@ -118,7 +118,7 @@ class EventsApi(object):
         header_params["Content-Type"] = self.api_client.select_header_content_type(["application/json"])  # noqa: E501  # noqa: E501
 
         # Authentication setting
-        auth_settings = ["oauth2_legacy"]  # noqa: E501
+        auth_settings = ["oauth2"]  # noqa: E501
 
         return self.api_client.call_api(
             "/crm/v3/timeline/events",
@@ -223,7 +223,7 @@ class EventsApi(object):
         header_params["Content-Type"] = self.api_client.select_header_content_type(["application/json"])  # noqa: E501  # noqa: E501
 
         # Authentication setting
-        auth_settings = ["oauth2_legacy"]  # noqa: E501
+        auth_settings = ["oauth2"]  # noqa: E501
 
         return self.api_client.call_api(
             "/crm/v3/timeline/events/batch/create",
@@ -332,7 +332,7 @@ class EventsApi(object):
         header_params["Accept"] = self.api_client.select_header_accept(["application/json", "*/*"])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ["oauth2_legacy"]  # noqa: E501
+        auth_settings = ["oauth2"]  # noqa: E501
 
         return self.api_client.call_api(
             "/crm/v3/timeline/events/{eventTemplateId}/{eventId}",
@@ -441,7 +441,7 @@ class EventsApi(object):
         header_params["Accept"] = self.api_client.select_header_accept(["application/json", "*/*"])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ["oauth2_legacy"]  # noqa: E501
+        auth_settings = ["oauth2"]  # noqa: E501
 
         return self.api_client.call_api(
             "/crm/v3/timeline/events/{eventTemplateId}/{eventId}/detail",
@@ -554,7 +554,7 @@ class EventsApi(object):
         header_params["Accept"] = self.api_client.select_header_accept(["text/html", "*/*"])  # noqa: E501
 
         # Authentication setting
-        auth_settings = ["oauth2_legacy"]  # noqa: E501
+        auth_settings = ["oauth2"]  # noqa: E501
 
         return self.api_client.call_api(
             "/crm/v3/timeline/events/{eventTemplateId}/{eventId}/render",

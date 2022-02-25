@@ -52,7 +52,7 @@ class RowsBatchApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: object
+        :return: BatchResponseHubDbTableRowV3
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -80,7 +80,7 @@ class RowsBatchApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(object, status_code(int), headers(HTTPHeaderDict))
+        :return: tuple(BatchResponseHubDbTableRowV3, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -125,7 +125,7 @@ class RowsBatchApi(object):
         header_params["Content-Type"] = self.api_client.select_header_content_type(["application/json"])  # noqa: E501  # noqa: E501
 
         # Authentication setting
-        auth_settings = ["hapikey", "oauth2_legacy"]  # noqa: E501
+        auth_settings = ["hapikey", "oauth2"]  # noqa: E501
 
         return self.api_client.call_api(
             "/cms/v3/hubdb/tables/{tableIdOrName}/rows/draft/batch/clone",
@@ -136,7 +136,7 @@ class RowsBatchApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type="object",  # noqa: E501
+            response_type="BatchResponseHubDbTableRowV3",  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get("async_req"),
             _return_http_data_only=local_var_params.get("_return_http_data_only"),  # noqa: E501
@@ -164,7 +164,7 @@ class RowsBatchApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: object
+        :return: BatchResponseHubDbTableRowV3
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -192,7 +192,7 @@ class RowsBatchApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(object, status_code(int), headers(HTTPHeaderDict))
+        :return: tuple(BatchResponseHubDbTableRowV3, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -239,7 +239,7 @@ class RowsBatchApi(object):
         header_params["Content-Type"] = self.api_client.select_header_content_type(["application/json"])  # noqa: E501  # noqa: E501
 
         # Authentication setting
-        auth_settings = ["hapikey", "oauth2_legacy"]  # noqa: E501
+        auth_settings = ["hapikey", "oauth2"]  # noqa: E501
 
         return self.api_client.call_api(
             "/cms/v3/hubdb/tables/{tableIdOrName}/rows/draft/batch/create",
@@ -250,7 +250,7 @@ class RowsBatchApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type="object",  # noqa: E501
+            response_type="BatchResponseHubDbTableRowV3",  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get("async_req"),
             _return_http_data_only=local_var_params.get("_return_http_data_only"),  # noqa: E501
@@ -351,7 +351,7 @@ class RowsBatchApi(object):
         header_params["Content-Type"] = self.api_client.select_header_content_type(["application/json"])  # noqa: E501  # noqa: E501
 
         # Authentication setting
-        auth_settings = ["hapikey", "oauth2_legacy"]  # noqa: E501
+        auth_settings = ["hapikey", "oauth2"]  # noqa: E501
 
         return self.api_client.call_api(
             "/cms/v3/hubdb/tables/{tableIdOrName}/rows/draft/batch/purge",
@@ -390,7 +390,7 @@ class RowsBatchApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: object
+        :return: BatchResponseHubDbTableRowV3
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -418,7 +418,7 @@ class RowsBatchApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(object, status_code(int), headers(HTTPHeaderDict))
+        :return: tuple(BatchResponseHubDbTableRowV3, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -463,7 +463,7 @@ class RowsBatchApi(object):
         header_params["Content-Type"] = self.api_client.select_header_content_type(["application/json"])  # noqa: E501  # noqa: E501
 
         # Authentication setting
-        auth_settings = ["hapikey", "oauth2_legacy"]  # noqa: E501
+        auth_settings = ["hapikey", "oauth2"]  # noqa: E501
 
         return self.api_client.call_api(
             "/cms/v3/hubdb/tables/{tableIdOrName}/rows/draft/batch/read",
@@ -474,7 +474,7 @@ class RowsBatchApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type="object",  # noqa: E501
+            response_type="BatchResponseHubDbTableRowV3",  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get("async_req"),
             _return_http_data_only=local_var_params.get("_return_http_data_only"),  # noqa: E501
@@ -502,7 +502,7 @@ class RowsBatchApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: object
+        :return: BatchResponseHubDbTableRowV3
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -530,7 +530,7 @@ class RowsBatchApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(object, status_code(int), headers(HTTPHeaderDict))
+        :return: tuple(BatchResponseHubDbTableRowV3, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -575,7 +575,7 @@ class RowsBatchApi(object):
         header_params["Content-Type"] = self.api_client.select_header_content_type(["application/json"])  # noqa: E501  # noqa: E501
 
         # Authentication setting
-        auth_settings = ["hapikey", "oauth2_legacy"]  # noqa: E501
+        auth_settings = ["hapikey", "oauth2"]  # noqa: E501
 
         return self.api_client.call_api(
             "/cms/v3/hubdb/tables/{tableIdOrName}/rows/batch/read",
@@ -586,7 +586,7 @@ class RowsBatchApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type="object",  # noqa: E501
+            response_type="BatchResponseHubDbTableRowV3",  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get("async_req"),
             _return_http_data_only=local_var_params.get("_return_http_data_only"),  # noqa: E501
@@ -614,7 +614,7 @@ class RowsBatchApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: object
+        :return: BatchResponseHubDbTableRowV3
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -642,7 +642,7 @@ class RowsBatchApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(object, status_code(int), headers(HTTPHeaderDict))
+        :return: tuple(BatchResponseHubDbTableRowV3, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -689,7 +689,7 @@ class RowsBatchApi(object):
         header_params["Content-Type"] = self.api_client.select_header_content_type(["application/json"])  # noqa: E501  # noqa: E501
 
         # Authentication setting
-        auth_settings = ["hapikey", "oauth2_legacy"]  # noqa: E501
+        auth_settings = ["hapikey", "oauth2"]  # noqa: E501
 
         return self.api_client.call_api(
             "/cms/v3/hubdb/tables/{tableIdOrName}/rows/draft/batch/replace",
@@ -700,7 +700,7 @@ class RowsBatchApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type="object",  # noqa: E501
+            response_type="BatchResponseHubDbTableRowV3",  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get("async_req"),
             _return_http_data_only=local_var_params.get("_return_http_data_only"),  # noqa: E501
@@ -728,7 +728,7 @@ class RowsBatchApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: object
+        :return: BatchResponseHubDbTableRowV3
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -756,7 +756,7 @@ class RowsBatchApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(object, status_code(int), headers(HTTPHeaderDict))
+        :return: tuple(BatchResponseHubDbTableRowV3, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -801,7 +801,7 @@ class RowsBatchApi(object):
         header_params["Content-Type"] = self.api_client.select_header_content_type(["application/json"])  # noqa: E501  # noqa: E501
 
         # Authentication setting
-        auth_settings = ["hapikey", "oauth2_legacy"]  # noqa: E501
+        auth_settings = ["hapikey", "oauth2"]  # noqa: E501
 
         return self.api_client.call_api(
             "/cms/v3/hubdb/tables/{tableIdOrName}/rows/draft/batch/update",
@@ -812,7 +812,7 @@ class RowsBatchApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type="object",  # noqa: E501
+            response_type="BatchResponseHubDbTableRowV3",  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get("async_req"),
             _return_http_data_only=local_var_params.get("_return_http_data_only"),  # noqa: E501
